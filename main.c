@@ -2,31 +2,30 @@
 #include <stdlib.h>
 
 int main()
+
 {
-    //Números interos: 1, 0, -1, -50, 45
-    //Marcador de Posiçao: %d
+//  Definir variáveis
 
-    //Números Floats: 2.1, 5.500, -0.92
-    //Marcador de posição: %f
-    //Usar 1.1%f, 1.2%f, pra saber quantas casas aparecer no console
+    char name[20];
+    int age;
 
-    printf("O numero %d eh um numero inteiro \n", 2);
-    printf("Onumero %1.2f eh um numero float \n", 2.4);
+//  Primeira pergunta (nome) Saída/Entrada:
 
-    /*Operadores Aritméticos Básicos
+    printf("Qual seu nome?: \n");
+    scanf("%s", &name);
 
-        Soma +
-        Subtração -
-        Multirplicação *
-        Divisão /
+//  Segunda pergunta (idade) Saída e entrada:
 
-    */
+    printf("Qual sua idade?: \n");
+    scanf("%i", &age);
 
-    printf("Soma de 5 + 2 : %d \n", 7);
-    printf("Subtracao de 5 - 2: %d \n", 3);
-    printf("Multiplicacao de 5 * 2: %d \n", 10);
-    printf("Divisao de 5 / 2: %1.1f \n", 2.5);
+// Resposta do console:
+
+    printf("Obrigado %s, sua idade, %i anos, foi salva! \n", name, age);
+
 
 
     return 0;
+
+
 }
