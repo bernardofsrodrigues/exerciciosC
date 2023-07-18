@@ -4,28 +4,14 @@
 int main()
 
 {
-//  Definir variáveis
+// Maria tem 40 anos
+// João tem 52 anos
+//Qual a soma da idade dos dois?
 
-    char name[20];
-    int age;
+    char Maria = 40 ;
+    char Joao = 52 ;
 
-//  Primeira pergunta (nome) Saída/Entrada:
-
-    printf("Qual seu nome?: \n");
-    scanf("%s", &name);
-
-//  Segunda pergunta (idade) Saída e entrada:
-
-    printf("Qual sua idade?: \n");
-    scanf("%i", &age);
-
-// Resposta do console:
-
-    printf("Obrigado %s, sua idade, %i anos, foi salva! \n", name, age);
-
-
-
-    return 0;
-
-
-}
+    printf("Maria tem: %d anos. \n", Maria);
+    printf("João tem: %d anos. \n", Joao);
+    printf("Entao a soma da idade deles eh: %d \n", Maria + Joao);
+};
